@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "首页",
+  "navigationBarBackgroundColor": "#00b886",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "brick-box": "../../components/brickBox/brickBox"
+  },
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 30
+}

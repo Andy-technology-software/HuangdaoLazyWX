@@ -1,13 +1,65 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+  <!--从后台读取数据，未获得数据呈现的界面  -->
+   <view class='loading-wrap' wx:if="{{ app.globalData.isLoading }}">
+    <view class='loading-inner'>
+      <button class='loading-title' loading="true">加载中</button>
+    </view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+  
+  <!--搜索框  -->
+    <view class="section searchBox">
+      <!--搜索框-白色背景区域  -->
+      <view class='search-outer' bindtap='moveToSearch' hover-class='bind-search-area'>
+        <!--搜索框-内容区域  -->
+        <view class='search-inner'>
+           <image lazy-load='{{ true }}' class='icon-search' src="http://github.com/lxs24sxl/readme_add_pic/raw/master/wx_mi_images/common/icon_search.png"></image> 
+          <text class='text'>搜索商品</text>
+        </view>
+      </view>
+    </view>
+
+    <!--轮播图  -->
+    <swiper class='section section-banner'>
+      <block class="banner-outer" >
+        <swiper-item class='banner-inner'>
+          <image class='banner-images' src="http://image.yuanlin.com/yuanyi/uppic/2016/7/c365d087-17cd-46f3-9774-8856620c0e4a.jpg"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+
+    <!-- 首页分类列表 -->
+    <view class='section section-cells'>
+      <view class='cells-list'>
+      
+        <view wx:for="{{ indexNavData }}" wx:key="indevNav" class='cells-item'>
+          <image mode="aspectFill"  lazy-load='{{ true }}' class='item-images item-phone' src="{{ item.imgSrc}}"  bindtap='test1' data-img="{{ item.imgSrc }}"></image>
+          <text class='item-text'>{{ item.title}}</text>
+        </view>
+
+      </view>
+    </view>
+
+    <!--首页推荐列表  -->
+    <view class='section section-main'>
+    
+      <view class='lineView'></view> 
+      <view class='activeTitView'>
+        <text class='activeTit'>·推荐产品</text>
+      </view>
+
+      <view class='main-list'>
+        <view class='main-item'>
+          <image lazy-load='{{ true }}' class='main-image' src="http://www.jingyanshu.com/uploads/allimg/131216/103103JY-0.jpg"></image>
+        </view>
+        <view class='main-item'>
+          <image lazy-load='{{ true }}' class='main-image' src="http://pic3.58cdn.com.cn/mobile/big/n_v1bl2lwticwzyvqrtf2mda.jpg"></image>
+        </view>
+      </view>
+
+    </view>
+
+    <!--首页主要信息  -->
+    <brick-box wx:for="{{ indexData.data }}" wx:key="{{ item.name }}" wx:for-item="item" wx:for-index="index" inner-object="{{ item }}"></brick-box>
+    
 </view>
