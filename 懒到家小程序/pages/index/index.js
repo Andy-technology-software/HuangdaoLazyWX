@@ -9,76 +9,76 @@ Page({
       id: 1000001,
       data: [
         {
-          name: 'star',
-          title: '明星单品',
-          bannerSrc: 'http://github.com/lxs24sxl/readme_add_pic/raw/master/wx_mi_images/index/star/star_banner1.png',
+          name: 'news',
+          title: '新品上线',
+          bannerSrc: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1519903305934&di=30e065f9928957b13b63b4a7b2079d7f&imgtype=0&src=http%3A%2F%2Fpic18.huitu.com%2Fres%2F20140423%2F467992_20140423141715399200_1.jpg',
           asBannerSrc: [],
           isShowBanner: true,
           child: [
             [
               {
-                id: 1010101,
+                id: 1010201,
                 index: 1,
-                title: '小米5X 变焦双摄',
-                desc: '5.5"大屏轻薄全金属',
-                price: '1299元起',
+                title: '大虾',
+                desc: '双动圈+动铁声学架构',
+                price: '299元',
                 price_del: '',
                 commodityType: '',
-                imgSrc: 'http://github.com/lxs24sxl/readme_add_pic/raw/master/wx_mi_images/index/star/mi_5x.png'
+                imgSrc: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1519903370213&di=a7f5941afb15b1cbd85fd887b886a143&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2Ffcfaaf51f3deb48f214f4f43fa1f3a292df5780d.jpg'
               },
               {
-                id: 1010102,
+                id: 1010202,
                 index: 2,
-                title: '红米5',
-                desc: '千元全面屏,前置柔光自拍',
-                price: '799元起',
+                title: '八爪鱼',
+                desc: '像杂志一般轻薄',
+                price: '3599元起',
                 price_del: '',
                 commodityType: '',
-                imgSrc: 'http://github.com/lxs24sxl/readme_add_pic/raw/master/wx_mi_images/index/star/hm_5.png'
+                imgSrc: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1519903403705&di=221b67338b2f6ecb1065ba87068f4f1b&imgtype=0&src=http%3A%2F%2Fpic60.nipic.com%2Ffile%2F20150228%2F9422660_140502818000_2.jpg'
               }
             ],
             [
               {
-                id: 1010103,
+                id: 1010203,
                 index: 3,
-                title: '小米移动电源高配版',
-                desc: '轻薄设计,轻松出行',
-                price: '149元',
+                title: '米家思维四控插线板',
+                desc: '四位分控,随用随开',
+                price: '89元',
                 price_del: '',
                 commodityType: '',
-                imgSrc: 'http://github.com/lxs24sxl/readme_add_pic/raw/master/wx_mi_images/index/star/mi_powerpro.png'
+                imgSrc: 'http://github.com/lxs24sxl/readme_add_pic/raw/master/wx_mi_images/index/news/mi_powerstrip-4k4.png'
               },
               {
-                id: 1010104,
+                id: 1010204,
                 index: 4,
-                title: '小米电视4A 65"',
-                desc: '4K超清大屏,64位处理器',
-                price: '4999元',
+                title: '霍尼韦尔新风口罩米家定制',
+                desc: '高效防护,佩戴舒适',
+                price: '249元',
                 price_del: '',
                 commodityType: '',
-                imgSrc: 'http://github.com/lxs24sxl/readme_add_pic/raw/master/wx_mi_images/index/star/mi_tv_4a65.png'
+                imgSrc: 'http://github.com/lxs24sxl/readme_add_pic/raw/master/wx_mi_images/index/news/mi_mask.png'
               }
             ],
             [
               {
-                id: 1010105,
+                id: 1010205,
                 index: 5,
-                title: '小米电视4A 49英寸"',
-                desc: '全高清,HDR,64位处理器',
-                price: '2399元',
+                title: 'USB3.0至千兆网口多功能转接器',
+                desc: '以一敌四,高效办公好搭档',
+                price: '129元',
                 price_del: '',
                 commodityType: '',
-                imgSrc: 'http://github.com/lxs24sxl/readme_add_pic/raw/master/wx_mi_images/index/star/mi_tv_4a49.png'
+                imgSrc: 'http://github.com/lxs24sxl/readme_add_pic/raw/master/wx_mi_images/index/news/mi_usb3.0zjk.png'
               },
               {
-                id: 1010106,
+                id: 1010206,
                 index: 6,
-                title: '小米空气净化器 2"',
-                desc: '10分钟,房间空气焕然一新',
-                price: '599元',
-                price_del: '699元',
-                commodityType: 'discount',
-                imgSrc: 'http://github.com/lxs24sxl/readme_add_pic/raw/master/wx_mi_images/index/star/mi_air2.png'
+                title: '70迈只能后视镜',
+                desc: '大屏大视野，看得更清晰',
+                price: '1299元',
+                price_del: '',
+                commodityType: '',
+                imgSrc: 'http://github.com/lxs24sxl/readme_add_pic/raw/master/wx_mi_images/index/news/mi_mirror.png'
               }
             ]
           ]
@@ -86,81 +86,6 @@ Page({
       ]
     },
     refreshData: [
-      {
-        name: 'news',
-        title: '新品上线',
-        bannerSrc: 'http://github.com/lxs24sxl/readme_add_pic/raw/master/wx_mi_images/index/news/news_banner1.png',
-        asBannerSrc: [],
-        isShowBanner: true,
-        child: [
-          [
-            {
-              id: 1010201,
-              index: 1,
-              title: '小米降噪耳机',
-              desc: '双动圈+动铁声学架构',
-              price: '299元',
-              price_del: '',
-              commodityType: '',
-              imgSrc: 'http://github.com/lxs24sxl/readme_add_pic/raw/master/wx_mi_images/index/news/mi_earphone3-5.png'
-            },
-            {
-              id: 1010202,
-              index: 2,
-              title: '小米笔记本Air 12.5',
-              desc: '像杂志一般轻薄',
-              price: '3599元起',
-              price_del: '',
-              commodityType: '',
-              imgSrc: 'http://github.com/lxs24sxl/readme_add_pic/raw/master/wx_mi_images/index/news/mi_air12.9.png'
-            }
-          ],
-          [
-            {
-              id: 1010203,
-              index: 3,
-              title: '米家思维四控插线板',
-              desc: '四位分控,随用随开',
-              price: '89元',
-              price_del: '',
-              commodityType: '',
-              imgSrc: 'http://github.com/lxs24sxl/readme_add_pic/raw/master/wx_mi_images/index/news/mi_powerstrip-4k4.png'
-            },
-            {
-              id: 1010204,
-              index: 4,
-              title: '霍尼韦尔新风口罩米家定制',
-              desc: '高效防护,佩戴舒适',
-              price: '249元',
-              price_del: '',
-              commodityType: '',
-              imgSrc: 'http://github.com/lxs24sxl/readme_add_pic/raw/master/wx_mi_images/index/news/mi_mask.png'
-            }
-          ],
-          [
-            {
-              id: 1010205,
-              index: 5,
-              title: 'USB3.0至千兆网口多功能转接器',
-              desc: '以一敌四,高效办公好搭档',
-              price: '129元',
-              price_del: '',
-              commodityType: '',
-              imgSrc: 'http://github.com/lxs24sxl/readme_add_pic/raw/master/wx_mi_images/index/news/mi_usb3.0zjk.png'
-            },
-            {
-              id: 1010206,
-              index: 6,
-              title: '70迈只能后视镜',
-              desc: '大屏大视野，看得更清晰',
-              price: '1299元',
-              price_del: '',
-              commodityType: '',
-              imgSrc: 'http://github.com/lxs24sxl/readme_add_pic/raw/master/wx_mi_images/index/news/mi_mirror.png'
-            }
-          ]
-        ]
-      },
       {
         name: 'router',
         title: '米家智能',

@@ -3,8 +3,6 @@
   <!--头部  -->
   <view class='brick-header'>
     <image lazy-load="{{isLazyLoad}}" class='brick-banner' src="{{ data.bannerSrc }}" wx:if="{{ data.isShowBanner }}"></image> 
-    <image lazy-load="{{isLazyLoad}}" class='brick-as-banner' wx:for="{{ data.asBannerSrc }}" wx:for-item="bannerItem" wx:for-index="bannerIndex" wx:key="bannerIndex" src='{{ bannerItem }}'></image>
-    <!-- <slot></slot> -->
   </view>
 
 <!--列表  -->

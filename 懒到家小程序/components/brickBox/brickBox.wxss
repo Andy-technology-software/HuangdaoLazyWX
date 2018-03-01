@@ -2,7 +2,7 @@
 .section-brick {
   width: 100%;
    /* padding: 14rpx 0;  */
-   border-top: 14rpx solid #ececec; 
+   /* border-top: 0rpx solid #ececec;  */
 }
 .brick-header {
   width: 100%;
@@ -40,10 +40,10 @@
   flex-direction: row;
 }
 .brick-item {
-  -webkit-box-flex: 1;
+  /* -webkit-box-flex: 1;
   -webkit-flex:1 1 auto;
-  flex: 1 1 auto;
-  width: 49.33%; 
+  flex: 1 1 auto; */
+  width: 50%; 
   padding-left: 10rpx;
   background-color: #ffffff;
 }
